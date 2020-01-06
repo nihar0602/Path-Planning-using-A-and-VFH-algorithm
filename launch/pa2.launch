@@ -1,0 +1,13 @@
+<launch>
+  <node type="stageros" name="stage_sim" pkg="stage_ros" args="-d $(find ros_pa2)/world/playground.world" />
+
+  <param name="goalx" type="double" value="4.5" />
+  <param name="goaly" type="double" value="9.0" />
+  
+
+
+
+
+  <node type="pa_2.py" name="pa_2" pkg="ros_pa2"/>
+
+</launch>
